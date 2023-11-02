@@ -1,0 +1,45 @@
+h2{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #485829;
+}
+h3{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 34px;
+}
+
+.container{
+  background-color: #f0f5f3;
+  margin-bottom: 50px;
+}
+
+.lien{
+  text-decoration: none;
+  cursor: pointer;
+  color: #485829;
+  font-weight: bold;
+}
+
+p{
+  line-height: 2em;
+}
+.detail{
+  max-height: 200px;
+}
+
+.card img {
+  min-height: 75%;
+}
+.video{
+  align-items: center;
+}
+.center{
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.sizeCard{
+  align-items: center;
+}

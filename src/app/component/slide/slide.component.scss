@@ -1,0 +1,21 @@
+.sizePictures{
+  width: 100%;
+  height: calc(100vh - 400px);
+  object-fit: cover;
+}
+
+.carousel-item h5  {
+  font-size: 32px;
+}
+.carousel-item p  {
+  font-size: 32px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
