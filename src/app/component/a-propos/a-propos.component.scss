@@ -1,13 +1,8 @@
 .titre {
   background-color: #f0f5f3;
+  margin-top: 115px;
   margin-bottom: 20px;
   padding: 20px;
-}
-
-.container h2{
-  text-align: center;
-  font-size: 62px;
-  color: #485829;
 }
 
 .position{
@@ -17,9 +12,6 @@
   flex-direction: row;
 }
 
-.position img{
-  border-radius: 10px;
-}
 .container{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -34,35 +26,20 @@
 
 h3 {
   font-weight : bold;
+  font-size: 26px;
 }
 
 a{
   text-decoration: none;
-  font-size: 28px;
+  font-size: 32px;
   color: #485829;
   cursor: pointer;
 }
 
 p{
   padding-top: 15px;
-  font-size: 20px;
+  font-size: 24px;
 }
-
-.pictureCard{
-  display: flex;
-  width: 625px;
-  height: 800px;
-}
-
-.border{
-  background-color: red;
-  border: 2px solid red;
-}
-
-.dep{
-  margin-top: 50%;
-}
-
 button {
   padding: 1em 1em;
   background: #efefef;
@@ -85,3 +62,157 @@ button:hover {
   margin: 50px auto;
 }
 
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #485829;
+  margin-top: 50px;
+  font-size: 34px;
+}
+.imgPropos {
+  width: 600px;
+  height: 700px;
+  object-fit: scale-down;
+}
+
+
+/** Media query **/
+/** ipad **/
+@media screen and (min-width: 912px)  {
+  .titre {
+    margin-top: 0;
+  }
+  .container{
+    flex-direction: row;
+  }
+  .imgPropos {
+    width: 600px;
+    height: 600px;
+    object-fit: scale-down;
+  }
+  .sizeHaut{
+    width: 30px;
+    height: 30px;
+  }
+}
+/** ipad **/
+@media all and (min-width: 768px) and (max-width: 820px) {
+  .titre {
+    margin-top: 0;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .imgPropos {
+    width: 550px;
+    height: 600px;
+    object-fit: scale-down;
+  }
+  .sizeHaut{
+    width: 30px;
+    height: 30px;
+  }
+}
+/** samsung **/
+@media screen and (max-width: 360px) {
+  .container{
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  h1{
+    margin-left: 5px;
+  }
+  .imgPropos {
+    width: 320px;
+    height: 250px;
+    object-fit: scale-down;
+  }
+  .sizeHaut{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/** iphone 14 pro **/
+@media all and (min-width: 600px) and (max-width: 716px) {
+  .titre {
+    margin-top: 0;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .imgPropos {
+    width: 550px;
+    height: 600px;
+    object-fit: scale-down;
+  }
+  .sizeHaut{
+    width: 30px;
+    height: 30px;
+  }
+}
+/** samsung **/
+@media screen and (max-width: 360px) {
+  .container{
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  h1{
+    margin-left: 5px;
+  }
+  .imgPropos {
+    width: 320px;
+    height: 250px;
+    object-fit: scale-down;
+  }
+  .sizeHaut{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/** iphone **/
+@media screen and (max-width: 390px) {
+  .container{
+    max-width: 350px;
+    flex-direction: column;
+  }
+  .imgPropos {
+    width: 300px;
+    height: 250px;
+    object-fit: scale-down;
+  }
+  .sizeHaut{
+    width: 30px;
+    height: 30px;
+  }
+  p{
+    font-size: 16px;
+  }
+  .titre {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 380px) and (max-width: 393px) {
+  .container{
+    max-width: 350px;
+    flex-direction: column;
+  }
+  .imgPropos {
+    width: 300px;
+    height: 250px;
+    object-fit: scale-down;
+  }
+  .sizeHaut{
+    width: 30px;
+    height: 30px;
+  }
+  p{
+    font-size: 16px;
+  }
+  .titre {
+    margin-top: 0;
+  }
+}

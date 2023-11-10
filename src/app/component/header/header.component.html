@@ -1,28 +1,44 @@
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <img class="size_logo" src="assets/logos/Logo_freelance_messiaen.png" alt="logo">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-      <ul class="navbar-nav  d-flex">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="home" routerLinkActive="active">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="projets" routerLinkActive="active">Projets</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="contact" routerLinkActive="active">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="a-propos" routerLinkActive="active">A propos</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<mat-toolbar class="mobile">
+<span>
+  <img class="size_logo" src="assets/logos/Logo_freelance_messiaen.png" alt="logo">
+ </span>
+<button class="menu" mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu">
+  <mat-icon >menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="projets" routerLinkActive="active">
+    <mat-icon>laptop</mat-icon>
+    <span>Projets</span>
+  </button>
+  <button mat-menu-item routerLink="contact" routerLinkActive="active">
+    <mat-icon>email</mat-icon>
+    <span>Contact</span>
+  </button>
+  <button mat-menu-item routerLink="a-propos" routerLinkActive="active">
+    <img class="svg" src="assets/logos/information.svg" alt="svg information">
+    <span>A propos</span>
+  </button>
+  <button mat-menu-item  routerLink="collaborations" routerLinkActive="active">
+    <mat-icon>collaborations</mat-icon>
+    <span >Collaborations</span>
+  </button >
+  <button mat-menu-item routerLink="cv" routerLinkActive="active">
+    <img class="svg" src="assets/logos/file-account.svg" alt="svg information">
+    <span>CV</span>
+  </button>
+</mat-menu>
+</mat-toolbar>
+
+<mat-toolbar class="laptop">
+  <span>
+  <img class="size_logo" src="assets/logos/Logo_freelance_messiaen.png" alt="logo">
+ </span>
+    <div>
+      <a  class="redir" mat-raised-button routerLink="projets" routerLinkActive="active" >Projets</a>
+      <a  class="redir" mat-raised-button routerLink="contact" routerLinkActive="active" >Contact</a>
+      <a  class="redir" mat-raised-button routerLink="a-propos" routerLinkActive="active" >A propos</a>
+      <a  class="redir" mat-raised-button routerLink="collaborations" routerLinkActive="active">Collaborations</a>
+      <a  class="redir" mat-raised-button routerLink="cv" routerLinkActive="active" >CV</a>
     </div>
-  </div>
-</nav>
+</mat-toolbar>
+

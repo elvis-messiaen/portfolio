@@ -3,3 +3,23 @@
     width: 150px;
     height: 100px;
 }/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+.sizeHaut{
+  height: 50px;
+  width: 50px;
+  border-radius: 10pw;
+}
+
+.button_haut {
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

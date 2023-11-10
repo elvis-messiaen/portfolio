@@ -1,1 +1,26 @@
-<p>contact works!</p>
+<div class="bloc">
+  <h2 >Contactez moi </h2>
+  <div *ngIf="sendFormulaire" class="container d-flex card text-center senFormulaire">{{message}}</div>
+
+  <form  action="javascript:void(0)"  (submit)="send()" [formGroup]="form" class="container card">
+    <div class="d-flex flex-row form-group mobile">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" formControlName="from_name">
+    </div>
+    <div class="d-flex flex-row form-group mobile">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" formControlName="email">
+    </div>
+    <div class="d-flex flex-row form-group mobile">
+      <label for="sujet">Sujet</label>
+      <input type="text" id="sujet" formControlName="sujet">
+    </div>
+    <div class="d-flex flex-row form-group mobile">
+      <label for="message">Message</label>
+      <textarea id="message" name="story" rows="5"  formControlName="message"></textarea>
+    </div>
+    <button type="submit"  class="d-flex contact flex-column"  [ngClass]="(form.invalid) ? 'test' : 'button' " >Envoyez</button>
+  </form>
+</div>
+
+

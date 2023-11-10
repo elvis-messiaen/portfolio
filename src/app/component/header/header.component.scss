@@ -1,21 +1,48 @@
-.navbar {
+mat-toolbar{
+  height: 120px;
   background-color: #485829;
 }
-.navbar ul li a {
-  margin-left: 30px;
-  font-size: 20px;
-  color: white;
-}
-form{
-  margin-left: 50%;
+
+.menu{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
 }
 
-.form-control{
-  justify-content: end;
+.svg{
+  height: 40px;
+  width: 40px;
+  padding-right: 20px;
 }
-.active{
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #82827a;
-  color: black
+
+
+.redir {
+  padding-right: 30px;
+  margin-left: 175px;
+  font-size: 20px;
+  background-color: #779e30 !important;
 }
+
+
+.redir:hover {
+  background-color: #485829;
+  color: #a9f61b;
+  border: 1px solid black;
+  font-size: 20px;
+}
+
+
+@media screen and (min-width: 845px) {
+  .mobile{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .laptop{
+    display: none;
+  }
+}
+
+
+

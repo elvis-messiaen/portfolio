@@ -1,6 +1,6 @@
 
 .footer {
-  position: fixed;
+  flex-shrink: 0;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -13,4 +13,28 @@
 
 section img{
   margin-left: 25px;
+}
+footer {
+  position: relative;
+  bottom:0;
+  width:100%;
+  height:190px;
+}
+
+p{
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 844px) {
+  footer{
+    height: 150px;
+  }
+  p, .text-center{
+    font-size: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .size_logo{
+    display: none;
+  }
 }

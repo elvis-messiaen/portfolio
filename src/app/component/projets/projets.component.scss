@@ -1,8 +1,9 @@
 h2{
   text-align: center;
-  margin-top: 25px;
   margin-bottom: 20px;
   color: #485829;
+  margin-top: 50px;
+  font-size: 34px;
 }
 h3{
   margin-top: 10px;
@@ -11,6 +12,7 @@ h3{
 }
 
 .container{
+  margin-top: 200px;
   background-color: #f0f5f3;
   margin-bottom: 50px;
 }
@@ -40,6 +42,91 @@ p{
   padding-bottom: 30px;
 }
 
-.sizeCard{
-  align-items: center;
+
+
+@media screen and (max-width: 844px) {
+  .mobile {
+    flex-direction: column !important;
+  }
+  .card{
+    width: 360px !important;
+    margin-bottom: 10px;
+  }
+  .picture, .picture img, .detail, .detail h4, .detail p  {
+    width: 360px;
+  }
+  iframe {
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+  }
+  .container {
+    margin-top: 50px;
+  }
+  .sizeHaut{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .mobile {
+    flex-direction: column !important;
+  }
+  .card{
+    width: 320px !important;
+    margin-bottom: 10px;
+  }
+  .picture, .picture img, .detail, .detail h4, .detail p  {
+    width: 320px;
+  }
+  iframe {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+  }
+  .container {
+    margin-top: 50px;
+  }
+  .sizeHaut{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 393px) {
+  h2{
+    display: flex;
+    margin: 5px auto;
+    width: 300px;
+    font-size: 18px;
+  }
+  .sizeCard{
+    align-items: center;
+  }
+  .mobile {
+    flex-direction: column !important;
+  }
+  .card{
+    width: 320px !important;
+    margin-bottom: 10px;
+  }
+   img{
+     justify-content: center;
+  }
+  .picture, .picture img, .detail, .detail h4, .detail p  {
+    width: 320px;
+  }
+  iframe {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+  }
+  .container {
+    margin-top: 50px;
+  }
+  .sizeHaut{
+    width: 30px;
+    height: 30px;
+  }
 }

@@ -10,8 +10,11 @@ export class AProposComponent implements OnInit{
 
     constructor(private router: Router) {}
   ngOnInit(): void {
+    window.scrollTo(0,0);
   }
-
+  haut() {
+    window.scrollTo(0,0);
+  }
   redirect() {
       this.router.navigate(['/contact'])
   }
