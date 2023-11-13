@@ -117,12 +117,20 @@ mat-card{
     text-align: center;
     margin-bottom: 15px;
   }
-  h2{
-    display: flex;
-    margin: 5px auto;
+
+
+  .description[_ngcontent-ng-c409948967] h2[_ngcontent-ng-c409948967] {
+    color: #485829;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 18px;
   }
 
+  .description[_ngcontent-ng-c409948967] {
+    background-color: #f0f5f3;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
   p{
     font-size: 14px;
   }
